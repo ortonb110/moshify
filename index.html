@@ -13,37 +13,19 @@
     <link rel="stylesheet" href="stylesheet/normalize.css" />
     <link rel="stylesheet" href="stylesheet/style.css" />
   </head>
-  <body style="padding: 5rem;">
-    <div class="card testimonial">
-      <div class="grid grid--1x2">
-        <div class="testimonial__image">
-          <img src="images/testimonial.jpg" alt="A happy smiling customer" />
-          <span class="icon-container icon-container--accent">
-          </svg><svg class="icon icon--white icon--small">
-            <use xlink:href="images/sprite.svg#quotes"></use>
-          </svg>
-          </span>
-        </div>
-        <blockquote class="quote">
-          <p class="quote__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quaerat eius
-            repellendus id facilis sint illo mollitia! Blanditiis, illum sapiente.
-          </p>
-          <footer>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary quote__line">
-                  <use xlink:href="images/sprite.svg#line"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title quote__author">Bright Orton</h3>
-                <p class="quote__organization">Ortify Company</p>
-              </div>
-            </div>
-          </footer>
-        </blockquote>
-      </div>
-    </div>
+  <body>
+    <nav class="nav collapsible">
+      <a class="nav__brand" href="/"><img src="images/logo.svg" alt="" /></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">VPS</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
+    <script src="js/main.js"></script>
   </body>
 </html>
